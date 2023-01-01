@@ -1,4 +1,3 @@
-
 package com.example.android.marsphotos.network
 
 import com.squareup.moshi.Json
@@ -8,7 +7,6 @@ import com.squareup.moshi.Json
  * The property names of this data class are used by Moshi to match the names of values in JSON.
  */
 data class MarsPhoto(
-        val id: String,
-        // used to map img_src from the JSON to imgSrcUrl in our class
-        @Json(name = "img_src") val imgSrcUrl: String
+    val id: String,
+    @Json(name = "img_src") val imgSrcUrl: String
 )
